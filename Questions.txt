@@ -1,0 +1,9 @@
+Q1. Given an array of integers,rearrange the array such that all odd integers should appear in the left side of the array and
+    all the even integers should appeaar in the right side of the array. Constraint is not to use another array.
+	Input :																Sample Input :
+		n - size of array followed by											5
+		array of n integers														3 5 6 8 1
+	Output :															Sample  Output : 
+		array of n integers in required format									3 5 1 6 8
+	
+	Solution : rearrangeArray.c
