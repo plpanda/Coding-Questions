@@ -7,3 +7,38 @@ Q1. Given an array of integers,rearrange the array such that all odd integers sh
 		array of n integers in required format									3 5 1 6 8
 	
 	Solution : rearrangeArray.c
+
+Q2. Charlie is the doting brother of little Lola. Be it any sort of thing from a haircut, trying new foods or losing a teeth, 
+	Charlie is been there and is happy to share his wisdom with his little sis. Back from school on an evening, Charlie and 
+	Lola were passing their time by reading few string algorithms. Lola lacked interest in the middle as she is still just a 
+	novice but didn't disturb her brother who was very much involved in the reading. After a while, Lola stopped Charlie to 
+	gauge his understanding in the topic. She gave Charlie a string S and Q queries to be applied on the string. Each query 
+	contains four integers ( i, j, k, l). For every query, first reverse the substring s[i, j] (inclusive) and then report if 
+	substring s[k, l] (inclusive) is a palindrome. It is to be noted that the reversal operations are only for the specific query 
+	and should not persist for further queries. You have to write a program that answers the Q queries on string S, for Lola to 
+	check the answers that Charlie has given. 
+  
+	For example, 																					Sample Input : 
+	Consider the input string S = "ababa" and Q = 4. 													ababa
+	The 4 queries on the string S are given below with values of ( i, j, k, l) as follows: 				4
+	2 3 3 4 																							2 3 3 4
+	1 2 3 4 																							1 2 3 4
+	1 3 3 5 																							1 3 3 5
+	2 4 1 5 																							2 4 1 5
+	  
+	Query 1: The string becomes a abba. The queried substring is bb, which is a palindrome. 		
+	Query 2: The string becomes baaba. The queried substring is ab, which is not a palindrome. 
+	Query 3: The string becomes ababa. The queried substring is aba, which is a palindrome. 
+	Query 4: The string becomes a baba. The queried substring is ababa, which is a palindrome. 
+	So the final output is 																			Sample Output : 
+	Yes 																								Yes
+	No  																								No
+	Yes  																								Yes
+	Yes  																								Yes
+	  
+	Input Format: 
+	The first line of input contains string S. S contains only the characters 'a' to 'z'. Assume the maximum length of the string as 50. 
+	The next line contains an integer Q. Each of the following Q lines each contain 4 space separated integers i, j, k and l. 
+	  
+	Output Format: 
+	Output exactly Q lines, each containing the result of corresponding query as "Yes" or "No". 
