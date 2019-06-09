@@ -45,7 +45,9 @@ Q2. Charlie is the doting brother of little Lola. Be it any sort of thing from a
 	
 	Solution : question2.c
 	
-Q3. Given a string, number of operations and a set of rotation operations on it, find out whether the string formed from the first 		character of the string after each operation is a substring of the original string or not. Operation is rotation of string 		described by the direction(R/L) in which it would be rotated and magnitude i.e. by what amount.
+Q3. Given a string, number of operations and a set of rotation operations on it, find out whether the string formed from the first
+	character of the string after each operation is a substring of the original string or not. Operation is rotation of string
+	described by the direction(R/L) in which it would be rotated and magnitude i.e. by what amount.
 
 	For Example,String : helloWorld
 		on R 3 : rldhelloWo , then
