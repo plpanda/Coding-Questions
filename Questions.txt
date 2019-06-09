@@ -41,4 +41,22 @@ Q2. Charlie is the doting brother of little Lola. Be it any sort of thing from a
 	The next line contains an integer Q. Each of the following Q lines each contain 4 space separated integers i, j, k and l. 
 	  
 	Output Format: 
-	Output exactly Q lines, each containing the result of corresponding query as "Yes" or "No". 
+	Output exactly Q lines, each containing the result of corresponding query as "Yes" or "No".
+	
+	Solution : question2.c
+	
+Q3. Given a string, number of operations and a set of rotation operations on it, find out whether the string formed from the first character
+	of the string after each operation is a substring of the original string or not. Operation is rotation of string described by the direction(R/L)
+	in which it would be rotated and magnitude i.e. by what amount.
+	For Example,String : helloWorld
+		on R 3 : rldhelloWo , then
+		on L 5 : lloWorldhe
+	
+	Input :																Sample Input :
+		string																	helloWorld
+		n - no of querries followed by											2
+		Querries/Operations														R 3 L 5
+	Output :															Sample  Output : 
+		YES/NO (whether it is substring or not)									YES		//as rl is substring of helloWorld
+	
+	**Note: the input would be space separated as helloWorld 2 R 3 L 5
