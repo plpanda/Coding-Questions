@@ -3,6 +3,15 @@
 using namespace std;
 class Solution {
 public:
+	bool isMonotonic0(vector<int>& nums) {
+        if(nums.size() < 3) return true;
+        bool asc = true, desc = true;
+        for(int i = 1; i < nums.size(); ++i){
+            asc = asc && (nums[i-1] <= nums[i]);
+            desc = desc && (nums[i-1] >= nums[i]);
+        }
+        return asc || desc;
+    }
     bool isMonotonic(vector<int>& arr) {
         bool incr = true, decr = true;
         int n = arr.size();
