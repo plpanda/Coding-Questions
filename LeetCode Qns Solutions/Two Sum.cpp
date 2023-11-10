@@ -3,7 +3,26 @@
 using namespace std;
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+	vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> n;
+        for(int i = 0; i < nums.size(); ++i){
+            if(n.contains(target - nums[i]))
+                return {n[target - nums[i]], i};
+            n[nums[i]] = i;
+        }
+        return {};
+    }
+    vector<int> twoSum2(vector<int>& nums, int target) {
+        for(int i = 0; i < nums.size(); ++i){
+            for(int j = i+1; j < nums.size(); ++j){
+                if(nums[i] + nums[j] == target){
+                    return {i, j};
+                }
+            }
+        }
+        return {};
+    }
+    vector<int> twoSum1(vector<int>& nums, int target) {
         unordered_map<int, int> s;
         int a,b, n = nums.size();
         for(int i = 0; i < n; ++i)
